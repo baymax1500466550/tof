@@ -7,7 +7,7 @@
 class SerialReader : public rclcpp::Node {
 public:
     SerialReader() : Node("raw_tof_node") {
-        serial_port.setPort("/dev/hidraw2");  // Set the serial port
+        serial_port.setPort("/dev/ttyUSB1");  // Set the serial port
         serial_port.setBaudrate(115200);  // Set the baud rate
         serial::Timeout to = serial::Timeout::simpleTimeout(1000);  // Set a timeout
         serial_port.setTimeout(to);  // Apply the timeout setting
