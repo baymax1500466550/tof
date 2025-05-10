@@ -1,6 +1,6 @@
 # Introduction #
 
-This package contains ROS driver nodes for ToF Sensor AFBR-S50 with CAN and UART interface.
+This package contains ROS2 wrapper nodes for ToF Sensor AFBR-S50 with CAN and UART interface.
 
 ### System Configurations ###
 
