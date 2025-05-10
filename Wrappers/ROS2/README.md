@@ -30,6 +30,12 @@ $ colcon build
 $ source ~/tof/Wrappers/ROS2/s50_tof_wrappers/install/setup.bash
 ```
 
+### Setup ###
+* The TOF sensor is by default connected to the 'ttyUSB1' port with a baud rate of '2M'.To adjust these settings, use the following command:
+```
+$ nano ~/tof/Wrappers/ROS2/s50_tof_wrappers/src/raw_tof/src/raw_tof.cpp
+```
+
 ### Connecting Tof sensors ###
 
 * Connect a bunch tof sensors through the CAN interface (e.g. https://www.mikroe.com/bdc-afbr-s50-tof-sensor-board#/279-tof_sensor_board-bdc_afbr_s50mv85i) to form a daisy chain
