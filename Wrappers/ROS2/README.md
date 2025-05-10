@@ -24,14 +24,10 @@ Install "ROS Desktop Full" on Ubuntu PC.
 
 
 ```
-$ source /opt/ros/humble/setup.bash
-$ mkdir -p ~/s50_tof_driver/src
-$ cd s50_tof_driver/src/
-$ catkin_init_workspace
-$ git clone https://github.com/Broadcom/AFBR-S50-API.git
-$ cd ~/s50_tof_driver
-$ catkin_make
-$ source ~/s50_tof_driver/devel/setup.bash
+$ git clone https://github.com/baymax1500466550/tof.git
+$ cd ~/tof/Wrappers/ROS2/s50_tof_wrappers
+$ colcon build
+$ source ~/tof/Wrappers/ROS2/s50_tof_wrappers/install/setup.bash
 ```
 
 ### Connecting Tof sensors ###
@@ -47,9 +43,9 @@ $ source ~/s50_tof_driver/devel/setup.bash
 
 * Open a new terminal and launch the raw data publisher.
 ```
-$ source ~/s50_tof_driver/devel/setup.bash
+$ source ~/tof/Wrappers/ROS2/s50_tof_wrappers/install/setup.bash
 $ chmod -R 777 ~/s50_tof_driver/
-$ roslaunch raw_tof raw_tof_c.launch
+$ ros2 run raw_tof raw_tof
 ```
 
 #### Option 2 : PointCloud in Rviz ####
@@ -57,9 +53,9 @@ $ roslaunch raw_tof raw_tof_c.launch
 * Open a new terminal and launch the pointcloud2 publisher.
 ```
 $ rosrun rviz rviz
-$ source ~/s50_tof_driver/devel/setup.bash
+$ source ~/tof/Wrappers/ROS2/s50_tof_wrappers/install/setup.bash
 $ chmod -R 777 ~/s50_tof_driver/
-$ roslaunch pointcloud_tof pointcloud.launch
+$ ros2 run pointcloud pointcloud
 ```
 
 For visualization and application tests an example implementation on a turtlebot using 5 x sensors boards is used.  
