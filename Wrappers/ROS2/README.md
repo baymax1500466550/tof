@@ -78,7 +78,7 @@ For visualization and application tests an example implementation on a turtlebot
 
 ![turtle](media/turtle.png)
 
-The next image shows the streamed sensor data via Rviz showing a pointcloud of 5 x 32 pixels into the 3D-space.  
+The next video shows the streamed sensor data via Rviz showing a pointcloud of 5 x 32 pixels into the 3D-space.  
 
 ![Rviz](media/rviz.gif)
 
