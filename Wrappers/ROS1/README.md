@@ -28,7 +28,7 @@ $ source /opt/ros/kinetic/setup.bash
 $ mkdir -p ~/s50_tof_driver/src
 $ cd s50_tof_driver/src/
 $ catkin_init_workspace
-$ git clone https://github.com/toffffffffff.git
+$ git clone https://github.com/baymax1500466550/tof.git
 $ cd ~/s50_tof_driver
 $ catkin_make
 $ source ~/s50_tof_driver/devel/setup.bash
