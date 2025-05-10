@@ -35,6 +35,15 @@ $ source ~/tof/Wrappers/ROS2/s50_tof_wrappers/install/setup.bash
 ```
 $ nano ~/tof/Wrappers/ROS2/s50_tof_wrappers/src/raw_tof/src/raw_tof.cpp
 ```
+* Edit here:
+```
+$ serial_port.setPort("/dev/ttyUSB0");  // Set the serial port
+$ serial_port.setBaudrate(2000000);  // Set the baud rate
+```
+* Rebuild again:
+```
+$ colcon build
+```
 
 ### Connecting Tof sensors ###
 
