@@ -60,7 +60,7 @@ $ colcon build
 * Open a new terminal and launch the raw data publisher.
 ```
 $ source ~/tof/Wrappers/ROS2/s50_tof_wrappers/install/setup.bash
-$ chmod -R 777 ~/s50_tof_driver/
+$ chmod 777 /dev/ttyUSB1
 $ ros2 run raw_tof raw_tof
 ```
 
