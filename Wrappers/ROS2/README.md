@@ -71,7 +71,7 @@ $ ros2 run raw_tof raw_tof
 $ rosrun rviz rviz
 $ source ~/tof/Wrappers/ROS2/s50_tof_wrappers/install/setup.bash
 $ chmod -R 777 ~/s50_tof_driver/
-$ ros2 run pointcloud pointcloud
+$ ros2 launch pointcloud pointcloud.launch.py
 ```
 
 For visualization and application tests an example implementation on a turtlebot using 5 x sensors boards is used.  
