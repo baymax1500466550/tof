@@ -42,6 +42,7 @@ serial_port.setBaudrate(2000000);  // Set the baud rate
 ```
 * Rebuild again:
 ```
+$ cd ~/tof/Wrappers/ROS2/s50_tof_wrappers
 $ colcon build
 ```
 
