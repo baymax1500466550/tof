@@ -48,7 +48,7 @@ $ source ~/s50_tof_driver/devel/setup.bash
 * Open a new terminal and launch the raw data publisher.
 ```
 $ source ~/s50_tof_driver/devel/setup.bash
-$ chmod -R 777 ~/s50_tof_driver/
+$ chmod 777 /dev/ttyUSB1
 $ roslaunch raw_tof raw_tof_c.launch
 ```
 
@@ -58,7 +58,7 @@ $ roslaunch raw_tof raw_tof_c.launch
 ```
 $ rosrun rviz rviz
 $ source ~/s50_tof_driver/devel/setup.bash
-$ chmod -R 777 ~/s50_tof_driver/
+$ chmod 777 /dev/ttyUSB1
 $ roslaunch pointcloud_tof pointcloud.launch
 ```
 
